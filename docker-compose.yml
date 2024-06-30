@@ -1,0 +1,10 @@
+version: "3"
+services:
+  do:
+    image: postgres:11.alpine
+    environment:
+      POSTURES_PASSARO: workout
+      POSTURES_USER: workout
+      POSTURES_T6: workout
+    ports:
+      - "5432:5432"
